@@ -1,4 +1,31 @@
- 
+    var vm = new Vue({
+    
+     el: '#databinding',
+                data: {        
+    
+                'title' : '',
+                'devlys_txt_data' : '',
+                'unicode_txt_data' : '',
+    
+                'this.modified_substring' : '',
+                'this.array_one_length' : 0,
+                'this.array_one' : [],
+                'this.array_two' : [],
+    
+                'loading_completed' : false,
+         
+        },
+    
+        components: {
+           
+    
+             },
+      
+             props: []
+             ,
+    
+    methods:{
+    
                 convert_Kritidev10_to_Unicode()
                 {
     
@@ -109,7 +136,7 @@
                     }
     
     
-                } // end of convert_Kritidev10_to_Unicode()
+                }, // end of convert_Kritidev10_to_Unicode()
     
                 // --------------------------------------------------
     
@@ -279,7 +306,7 @@
                 //**************************************
     
     
-                } // end of the function  Replace_Symbols1
+                }, // end of the function  Replace_Symbols1
     
                 Convert_to_Kritidev_010()
                 {
@@ -403,7 +430,7 @@
     
                 //**************************************************
     
-                } // end of Convert_Unicode_to_Krutidev010 function
+                }, // end of Convert_Unicode_to_Krutidev010 function
     
                 Replace_Symbols( )
                 {
@@ -502,7 +529,17 @@
     
     
     
-        }
-       
+        },
+        created()
+        {
+           
+        },
     
-       
+        mounted() {
+             document.onreadystatechange = () => {
+                if (document.readyState == "complete") {
+                    this.loading_completed = true;
+                }
+            }
+      },
+    });
