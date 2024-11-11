@@ -411,7 +411,7 @@ function setUnicodeTxtData(value) {
                     {
                     sthiti2 +=  max_text_size ;
                     //while (document.getElementById("Unicode_text").value.charAt ( sthiti2 ) != ' ') {sthiti2--;}
-                    while (document. unicode_txt_data.charAt ( sthiti2 ) != ' ') {sthiti2--;}
+                    while (document.unicode_txt_data.charAt ( sthiti2 ) != ' ') {sthiti2--;}
                     }
                     else  { sthiti2 = text_size  ;  chale_chalo = 0 }
     
