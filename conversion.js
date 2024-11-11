@@ -28,7 +28,7 @@ function setUnicodeTxtData(value) {
   unicode_txt_data = value;
 }
 
-convert_Kritidev10_to_Unicode()
+function convert_Kritidev10_to_Unicode()
                 {
     
                      array_one = new Array(//"kZsa",
@@ -142,7 +142,7 @@ convert_Kritidev10_to_Unicode()
     
                 // --------------------------------------------------
     
-                Replace_Symbols1( )
+            function Replace_Symbols1( )
                 {
                 var input_symbol_idx = 0;
                 //substitute  array_two elements in place of corresponding  array_one elements
@@ -310,7 +310,7 @@ convert_Kritidev10_to_Unicode()
     
                 } // end of the function  Replace_Symbols1
     
-                Convert_to_Kritidev_010()
+                function Convert_to_Kritidev_010()
                 {
     
                  array_one = new Array(
@@ -434,7 +434,7 @@ convert_Kritidev10_to_Unicode()
     
                 } // end of Convert_Unicode_to_Krutidev010 function
     
-                Replace_Symbols( )
+                function Replace_Symbols( )
                 {
     
     
