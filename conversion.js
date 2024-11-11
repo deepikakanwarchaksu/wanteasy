@@ -28,7 +28,7 @@ function setUnicodeTxtData(value) {
   unicode_txt_data = value;
 }
 
-function convert_Kritidev10_to_Unicode()
+                function convert_Kritidev10_to_Unicode()
                 {
     
                      array_one = new Array(//"kZsa",
