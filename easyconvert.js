@@ -272,7 +272,7 @@ function setUnicodeTxtData(value) {
                         var previous_to_position_of_half_r = probable_position_of_half_r - 1 ;
     
     
-                            if (previous_to_position_of_half_r > 0)  // if-03
+                            /*if (previous_to_position_of_half_r > 0)  // if-03
                             {  var character_previous_to_position_of_half_r =  modified_substring.charAt( previous_to_position_of_half_r )
                                 //alert(" 8. character_previous_to_position_of_half_r = "+character_previous_to_position_of_half_r );
     
@@ -288,7 +288,24 @@ function setUnicodeTxtData(value) {
     
     
                                 } // end of while-06
-                            } // end of if-03
+                            } // end of if-03 8 */
+
+                      if (previous_to_position_of_half_r > 0) {  // if-03
+                                          var character_previous_to_position_of_half_r = modified_substring.charAt(previous_to_position_of_half_r);
+                                          // alert(" 8. character_previous_to_position_of_half_r = "+character_previous_to_position_of_half_r);
+                                      
+                                          // Check if the character is the "halant" character (्)
+                                          while (character_previous_to_position_of_half_r === "्") {  // while-06
+                                              // halant found, move to previous character
+                                              probable_position_of_half_r = previous_to_position_of_half_r - 1;
+                                              character_at_probable_position_of_half_r = modified_substring.charAt(probable_position_of_half_r);
+                                      
+                                              // Move to the previous character
+                                              previous_to_position_of_half_r = probable_position_of_half_r - 1;
+                                              character_previous_to_position_of_half_r = modified_substring.charAt(previous_to_position_of_half_r);
+                                          } // end of while-06
+                                      } // end of if-03
+
     
     
     
