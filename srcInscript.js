@@ -1,4 +1,4 @@
-const chapters: [
+const chapters = [
           { lesson_id: 1, characters: "र त", matras: "े ि" },
           { lesson_id: 2, characters: "क च", matras: "ो ्" },
           { lesson_id: 3, characters: "प", matras: "ु" },
