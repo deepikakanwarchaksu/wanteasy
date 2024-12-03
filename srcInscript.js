@@ -1,8 +1,8 @@
 const chapters = [
-          { lesson_id: 0, characters: "र त", matras: "े ि" },
-          { lesson_id: 1, characters: "क च", matras: "ो ्" },
-          { lesson_id: 2, characters: "प", matras: "ु" },
-          { lesson_id: 3, characters: "ग ज", matras: "ौ ा" },
+          { lesson_id: 1, characters: "र त", matras: "े ि" },
+          { lesson_id: 2, characters: "क च", matras: "ो ्" },
+          { lesson_id: 3, characters: "प", matras: "ु" },
+          { lesson_id: 4, characters: "ग ज", matras: "ौ ा" },
           { lesson_id: 5, characters: "ह द", matras: "ै ी" },
           { lesson_id: 6, characters: "ब", matras: "ू" },
           { lesson_id: 7, characters: "ट", matras: "ं" },
